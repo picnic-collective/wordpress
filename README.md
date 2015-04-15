@@ -5,13 +5,40 @@ This repo should be [forked](https://github.com/picnic-collective/wordpress/fork
 
 ## Requirements
 
-- Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- Homebrew Cask: `brew install caskroom/cask/brew-cask`
-- VirtualBox: `brew cask install virtualbox`
-- Vagrant: `brew cask install vagrant`
-- Vagrant VBGuest: `vagrant plugin install vagrant-vbguest`
-- Vagrant Hosts Updater: `vagrant plugin install vagrant-hostsupdater`
-- *Recommended* Git Flow: `brew install git-flow`
+- Homebrew:
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+- Homebrew Cask: 
+```
+brew install caskroom/cask/brew-cask
+```
+
+- VirtualBox: 
+```
+brew cask install virtualbox
+```
+
+- Vagrant: 
+```
+brew cask install vagrant
+```
+
+- Vagrant VBGuest:
+```
+vagrant plugin install vagrant-vbguest
+```
+
+- Vagrant Hosts Updater:
+```
+vagrant plugin install vagrant-hostsupdater
+```
+
+- *Recommended* Git Flow: 
+```
+brew install git-flow
+```
 
 ## Setup
 
