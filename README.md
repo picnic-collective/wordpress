@@ -35,6 +35,11 @@ vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-hostsupdater
 ```
 
+- Librarian Chef:
+```
+gem install librarian-chef
+```
+
 - *Recommended* Git Flow: 
 ```
 brew install git-flow
@@ -48,13 +53,6 @@ brew install git-flow
 site_name = "mywordpresssite"
 ```
 
-- Update the `db` and `password` variables at the top of `provision.sh` to something appropriate:
-
-```
-db="my_wordpress_site"
-password="supersecretpassword"
-```
-
+- Run `librarian-chef install`
 - Run `vagrant up` 
 - Once Vagrant has finished loaded navigate to `http://mywordpresssite.dev` (assuming `mywordpresssite` was set as the `site_name` in the `Vagrantfile`)
-- Enter in the database name and password from the top of `provision.sh`

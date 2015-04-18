@@ -1,0 +1,5 @@
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt', '~> 2.7.0'
+cookbook 'locale', '~> 1.0.2'
+cookbook 'wordpress', '~> 3.0.0'
