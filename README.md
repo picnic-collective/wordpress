@@ -5,22 +5,22 @@ This repo should be [forked](https://github.com/picnic-collective/wordpress/fork
 
 ## Requirements
 
-- Homebrew:
+- **Recommended** Homebrew:
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-- Homebrew Cask: 
+- **Recommended** Homebrew Cask:
 ```
 brew install caskroom/cask/brew-cask
 ```
 
-- VirtualBox: 
+- VirtualBox:
 ```
 brew cask install virtualbox
 ```
 
-- Vagrant: 
+- Vagrant:
 ```
 brew cask install vagrant
 ```
@@ -35,24 +35,35 @@ vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-hostsupdater
 ```
 
-- Librarian Chef:
+- Bundler:
 ```
-gem install librarian-chef
+gem install bundler
 ```
 
-- *Recommended* Git Flow: 
+- Node/NPM
+```
+brew install node
+```
+
+- Grunt:
+```
+npm install -g grunt-cli
+```
+
+- **Recommended** Git Flow:
 ```
 brew install git-flow
 ```
 
 ## Setup
 
-- Update the `site_name` variable at the top of `Vagrantfile` to something appropriate. This will be used as the URL for the dev site with `.dev` appended.
-
-```
-site_name = "mywordpresssite"
-```
-
+- Update the configuration values in `config.json`:
+    - `site_name`: This will be used as database name and username as well as the URL for the dev site (with `.dev` appended).
+    - `db.user`: The database username (same as site_name is recommended)
+    - `db.name`: The database name (same as site_name is recommended)
+    - `db.pass`: The database password
+- Run `bundle install`
+- Run `npm install`
 - Run `librarian-chef install`
-- Run `vagrant up` 
-- Once Vagrant has finished loaded navigate to `http://mywordpresssite.dev` (assuming `mywordpresssite` was set as the `site_name` in the `Vagrantfile`)
+- Run `vagrant up`
+- Once Vagrant has finished loaded navigate to `http://<site_name>.dev`

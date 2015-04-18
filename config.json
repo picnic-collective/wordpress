@@ -1,0 +1,13 @@
+{
+    "site_name": "xxx",
+
+    "wordpress":{
+        "version": "latest"
+    },
+
+    "db": {
+        "name": "xxx",
+        "user": "xxx",
+        "pass": "password"
+    }
+}

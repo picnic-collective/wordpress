@@ -1,0 +1,18 @@
+default:
+    - "watch"
+
+staging:
+    - "checkbranch:develop" # Checks current Git branch is `develop`
+    - "exec:git_stash" # Stash uncommitted files
+    - "_build"
+    - "exec:git_unstash" # Bring back stashed files
+
+production:
+    - "checkbranch:master"
+    - "exec:git_stash" # Stash uncommitted files
+    - "_build"
+    - "exec:git_unstash" # Bring back stashed files
+
+_build:
+    - "clean:main" # Clears the `build` directory
+    - "copy:main" # Copies across `public` and `fuel` directories
