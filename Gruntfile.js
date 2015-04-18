@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     // Load tasks
     require("load-grunt-config")(grunt, {
         config: {
-            theme_name: config.site_name,
+            theme_name: config.db.name,
             build: "build",
             dev_public: "public",
             dev_assets: "theme"
