@@ -1,6 +1,7 @@
 # Set the site name
 require "json"
-config_file = JSON.parse(File.read("config.json"))
+vagrant_dir = File.dirname(__FILE__);
+config_file = JSON.parse(File.read("#{vagrant_dir}/config.json"))
 site_name = config_file["site_name"]
 
 Vagrant.configure(2) do |config|
