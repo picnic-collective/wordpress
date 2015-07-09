@@ -47,6 +47,12 @@ Updates your `HOSTS` file with the relevant IP/hostname config
 vagrant plugin install vagrant-hostsupdater
 ```
 
+### Vagrant Librarian Chef:
+Installs necessary Chef cookbooks automatically.
+```
+vagrant plugin install vagrant-librarian-chef
+```
+
 ### Bundler:
 Installs Ruby Gems from a `Gemfile`
 ```
@@ -75,6 +81,5 @@ npm install -g grunt-cli
     - `db.pass`: The database password
 - Run `bundle install`
 - Run `npm install`
-- Run `librarian-chef install`
 - Run `vagrant up`
 - Once Vagrant has finished loaded navigate to `http://<site_name>.dev`
