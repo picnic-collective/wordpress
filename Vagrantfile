@@ -16,6 +16,9 @@ Vagrant.configure(2) do |config|
     # Setup the server root
     config.vm.synced_folder "./", "/var/www"
 
+    # Use Berksfile
+    config.berkshelf.enabled = true
+
     # Provisioning
     config.vm.provision :chef_solo do |chef|
         # Add recipes
