@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
     # Provisioning
     config.vm.provision :chef_solo do |chef|
-        chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
+        chef.cookbooks_path = ["site-cookbooks"]
 
         # Add recipes
         chef.add_recipe "recipe[apt]" # Update apt-get

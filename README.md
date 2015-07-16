@@ -23,6 +23,13 @@ The Mac version of Ruby requires `sudo` to install Gems. Installing the Homebrew
 brew install ruby
 ```
 
+### Chef Development Kit
+Required to install Chef dependencies
+```
+brew cask install chefdk
+```
+Available [here](https://downloads.chef.io/chef-dk/) for non-Homebrewers
+
 ### VirtualBox:
 VirtualBox runs the virtual machines for Vagrant
 ```
@@ -47,10 +54,10 @@ Updates your `HOSTS` file with the relevant IP/hostname config
 vagrant plugin install vagrant-hostsupdater
 ```
 
-### Vagrant Librarian Chef:
+### Vagrant Berksfile
 Installs necessary Chef cookbooks automatically.
 ```
-vagrant plugin install vagrant-librarian-chef
+vagrant plugin install vagrant-berkshelf
 ```
 
 ### Bundler:
